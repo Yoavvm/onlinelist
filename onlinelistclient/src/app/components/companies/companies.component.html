@@ -1,0 +1,3 @@
+<select (change)="getCompanyUsers($event)">
+    <option (click)="setCompany(company)" *ngFor="let company of companyService.companies" [value]="company">{{company.companyName}}</option>
+</select>
